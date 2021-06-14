@@ -1,0 +1,28 @@
+
+<table width="100%" border="5">
+    <tr><th width="77">Image</th>
+        <th width="150">Name</th>
+    <th width="150">Cost</th>
+    <th width="150">Rating</th>
+    <th width="150">Date</th>
+    <th width="600">Description</th>
+    <th></th>
+    <th></th></tr>
+</table>
+<table *ngFor="let item of getAllProducts()"  border="10" width="100%">
+    
+
+    <tr>
+        <td> <img src="{{item.imageName}}" height="40" width="40"/>   </td>
+        <td width="150"> {{item.productName}} </td>
+        <td width="150"> {{item.productCost | currency :'INR ':true}} </td>
+       <!-- <td width="150"><div *ngFor="let i of getRating("{{item.rating}}")"><img src="{{item.imageName}}" height="10" width="10" /></div> </td>-->
+       <td width="150">{{item.rating}}</td> 
+       <td width="150">{{item.date | date:'mediumDate'}}</td>
+        <td width="600"> {{item.description | desc:item.description:item.productCost}} </td>
+        <td> <button (click)="addToCart(item.productName)">Add To Cart</button> </td>  
+        <td><button (click)="doShare(item.productName)">Share</button></td>
+    </tr>
+</table>
+<p>Units in cart<br>{{unitsInCart}}</p>
+<p align="right" style="white-space: pre;" >Items in Cart <br/> {{cartItems}}</p>
