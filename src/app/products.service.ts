@@ -14,39 +14,39 @@ export class ProductsService {
   getAllProducts():ProductDetails[]
   {
     let hpLaptop : ProductDetails = {
-      productName : 'HP-Laptop - 123',
-      productCost : 75000,
+      productName : 'Paracetamol',
+      productCost : 10,
       rating:4,
       date:new Date("2019-01-01"),
-      description:'HP Laptop 2021',
-      imageName:this.imageRootPath+ 'hp.png'
+      description:'Paracetamol',
+      imageName:this.imageRootPath+ 'cetamol.jpg'
     }
 
     let appleLaptop : ProductDetails = {
-      productName : 'Apple - Macbook Pro - 123',
-      productCost : 175000,
+      productName : 'Painkiller',
+      productCost : 20,
       rating:5,
       date:new Date("2020-02-02"),
-      description:'Apple Laptop 2021',
-      imageName:this.imageRootPath+ 'hp.png'
+      description:'Pain Killer',
+      imageName:this.imageRootPath+ 'pain.jpg'
     }
 
     let dellLaptop : ProductDetails = {
-      productName : 'Dell - 123',
-      productCost : 115000,
+      productName : 'Antihistamines',
+      productCost : 50,
       rating:3,
       date:new Date("2018-03-03"),
-      description:'Dell Laptop 2021',
-      imageName:this.imageRootPath+ 'hp.png'
+      description:'Anti histamines',
+      imageName:this.imageRootPath+ 'antihistamines.jpg'
     }
 
     let lenovoLaptop : ProductDetails = {
-      productName : 'Lenovo - 123',
-      productCost : 65000,
+      productName : 'Antacids',
+      productCost : 20,
       rating:5,
       date:new Date("2021-04-04"),
-      description:'All New Lenovo Laptop 2021',
-      imageName:this.imageRootPath+ 'hp.png'
+      description:'Anti Acid',
+      imageName:this.imageRootPath+ 'antacids.jpg'
     }
 
     
